@@ -1,9 +1,8 @@
 from rest_framework import serializers
 from rest_framework.relations import SlugRelatedField
 from django.contrib.auth import get_user_model
-User = get_user_model()
-
 from posts.models import Comment, Post, Group, Follow
+User = get_user_model()
 
 
 class PostSerializer(serializers.ModelSerializer):
@@ -52,7 +51,8 @@ class FollowSerializer(serializers.ModelSerializer):
     def validate(self, attrs):
         # дополнительно проверим уникальность подписки
         user = self.context['request'].user
-        if Follow.objects.filter(user=user, following=attrs['following']).exists():
+        if Follow.objects.filter(user=user,
+                                 following=attrs['following']).exists():
             raise serializers.ValidationError(
                 'Вы уже подписаны на этого пользователя.'
             )
