@@ -23,7 +23,7 @@ git clone https://github.com/Kaiki-De-280/api_final_yatube.git
 ```
 
 ```
-py cd api_final_yatube
+cd api_final_yatube
 ```
 
 Создать и активировать виртуальное окружение:
@@ -56,3 +56,8 @@ python3 manage.py migrate
 ```
 python3 manage.py runserver
 ```
+
+### Основные эндпоинты
+
+>Все пути начинаются с префикса `/api/v1/`
+
