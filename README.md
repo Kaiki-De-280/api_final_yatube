@@ -62,4 +62,11 @@ python3 manage.py runserver
 >Все пути начинаются с префикса `/api/v1/`
 
 ### Аутентификация (JWT)
-* **POST** `/jwt/create/` — получить пару токенов _access_ и _refresh_
+
+* **POST** `/jwt/create/` — получить пару токенов `access` и `refresh`
+
+* **POST** `/jwt/refresh/` — обновить токен `access` по `refresh` токену
+
+* **POST** `/jwt/verify/` — проверить валидность токена `access`
+
+### Публикации (Posts)
