@@ -80,3 +80,13 @@ python3 manage.py runserver
 * **PUT/PATCH** `/posts/{id}/` — обновить публикацию (только автор)
 
 * **DELETE** `/posts/{id}/` — удалить публикацию (только автор)
+
+### Комментарии (Comments)
+
+* **GET** `/posts/{post_id}/comments/` — получить все комментарии публикации
+
+* **POST** `/posts/{post_id}/comments/` — добавить комментарий (только авторизованные)
+
+* **GET** `/posts/{post_id}/comments/{id}/` — получить комментарий публикации по id
+
+* **PUT/PATCH/DELETE** `/posts/{post_id}/comments/{id}/` — работа с конкретным комментарием (только автор)
