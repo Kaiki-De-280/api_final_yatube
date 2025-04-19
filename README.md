@@ -1,6 +1,7 @@
 # api_final
-api final
+
 Yatube — это REST‑API для социальной сети. С его помощью можно публиковать записи, комментировать их, объединять публикации в группы и подписываться на других пользователей.
+
 # Описание
 
 Проект реализует серверную часть для блога Yatube с использованием Django REST Framework. В API доступны следующие возможности:
@@ -26,6 +27,7 @@ py cd api_final_yatube
 ```
 
 Создать и активировать виртуальное окружение:
+
 ```
 python3 -m venv venv
 ```
@@ -35,6 +37,22 @@ source venv/bin/activate       # Linux/macOS
 ```
 
 ```
-venv\\Scripts\\activate      # Windows
+source venv\Scripts\activate      # Windows
 ```
 
+Установить зависимости из файла requirements.txt:
+
+```
+pip install -r requirements.txt
+```
+
+Выполнить миграции:
+
+```
+python3 manage.py migrate
+```
+
+Запустить проект:
+```
+python3 manage.py runserver
+```
