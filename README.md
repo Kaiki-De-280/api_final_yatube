@@ -16,5 +16,6 @@ Yatube — это REST‑API для социальной сети. С его п�
 # Как развернуть проект:
 
 Склонировать репозиторий и перейти в него в терминале
-`git clone https://github.com/Kaiki-De-280/api_final_yatube.git`
-`cd api_final_yatube`
+`py git clone https://github.com/Kaiki-De-280/api_final_yatube.git`
+
+`py cd api_final_yatube`
